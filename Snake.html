@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="Code.js"></script>
+	<meta charset="utf-8"/>
+	<title>Snake</title>
+	<style>
+		h1{text-align: center;
+			line-height: 2;}
+		.wrapper {text-align: center;}
+		* {padding: 0; margin:0;}
+		canvas {background: #eee; display: block; margin: 0 auto;}
+	</style>
+</head>
+<body>
+<canvas id="gc" width = "480" height="480" style="border:1px solid #000000;"></canvas>
+<div class="wrapper">
+<button class="button" onclick="main()">PLAY GAME</button>
+</div>
+<script> 
+var canvas = document.getElementById("gc");
+var ctx = canvas.getContext("2d");
+ctx.fillStyle = "black";
+ctx.font = "bold 35px Times";
+ctx.fillText("WELCOME TO SNEK 2.0", 30, 240);
+ctx.font = "bold 25px Times";
+ctx.fillText("How to play: Use arrow keys to move", 30, 360);
+</script>
+<h1 id="scoreboard"></h1>
+</body>
+</html>
